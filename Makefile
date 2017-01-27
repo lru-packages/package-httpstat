@@ -6,7 +6,7 @@ PREFIX=/usr/local/bin
 LICENSE=MIT
 VENDOR="Dave Cheney"
 MAINTAINER="Ryan Parman"
-DESCRIPTION="httpstat visualizes curl(1) statistics in a way of beauty and clarity."
+DESCRIPTION="httpstat visualizes curl statistics in a way of beauty and clarity."
 URL=https://github.com/davecheney/httpstat
 RHEL=$(shell rpm -q --queryformat '%{VERSION}' centos-release)
 
