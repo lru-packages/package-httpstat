@@ -1,7 +1,6 @@
 NAME=httpstat
 VERSION=1.0.0
-EPOCH=1
-ITERATION=1
+ITERATION=1.lru
 PREFIX=/usr/local/bin
 LICENSE=MIT
 VENDOR="Dave Cheney"
@@ -20,7 +19,6 @@ all: info clean compile package move
 info:
 	@ echo "NAME:        $(NAME)"
 	@ echo "VERSION:     $(VERSION)"
-	@ echo "EPOCH:       $(EPOCH)"
 	@ echo "ITERATION:   $(ITERATION)"
 	@ echo "PREFIX:      $(PREFIX)"
 	@ echo "LICENSE:     $(LICENSE)"
@@ -56,7 +54,6 @@ package:
 		-n $(NAME) \
 		-v $(VERSION) \
 		-m $(MAINTAINER) \
-		--epoch $(EPOCH) \
 		--iteration $(ITERATION) \
 		--license $(LICENSE) \
 		--vendor $(VENDOR) \
